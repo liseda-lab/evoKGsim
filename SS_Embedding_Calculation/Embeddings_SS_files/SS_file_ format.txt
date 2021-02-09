@@ -1,0 +1,9 @@
+﻿The sematic similarity files have 5 columns : 
+
+    • 1st column : Protein1 UniProt Identifier (prot1) 
+    • 2nd column : Protein2 UniProt Identifier (prot 2)
+    • 
+    • 3rd column : Semantic Similarity for biological processes 
+    • 4th column : Semantic Similarity for cellular components 
+    • 5th column : Semantic Similarity for molecular functions
+   
