@@ -1,0 +1,10 @@
+﻿The performance measures files have 21 columns : 
+
+    • 1st column : WAF using Test set
+    • 2nd column : Fmeasure non interact with Test set
+    • 3rd column : Fmeasure interact with Test set
+    • 4th column : Precision with Test set
+    • 5th column : Recall with Test set
+    • 6th column : Accuracy with Test set
+    • 7th column : AUC with Test set
+

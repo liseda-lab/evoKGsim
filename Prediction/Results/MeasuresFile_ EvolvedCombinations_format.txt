@@ -1,0 +1,73 @@
+﻿The performance measures files have 8 columns.
+
+If the 1st colunmn starts with "Generation":
+
+    • 1st column : number of generation
+    • 2nd column : RMSE with Training set (fitness) using the best program
+    • 3rd column : RMSE with Test set (fitness) using the best program
+
+    • 4st column : WAF with Training set using the best program
+    • 5nd column : WAF with Test set using the best program
+    • 6rd column : WAF with All dataset using the best program
+
+    • 7th column : Fmeasure non interact with Training set using the best program
+    • 8th column : Fmeasure non interact with Test set using the best program
+    • 9th column : Fmeasure non interact with All dataset using the best program
+
+    • 10th column : Fmeasure interact with Training set using the best program     
+    • 11th column : Fmeasure non interact with Test set using the best program
+    • 12th column : Fmeasure non interact with All dataset using the best program
+
+    • 13th column : Precision with Training set using the best program
+    • 14th column : Precision with Test se using the best program
+    • 15th column : Precision with All dataset using the best program
+      
+    • 16th column : Recall with Training set using the best program
+    • 17th column : Recall with Test set using the best program
+    • 18th column : Recall with All dataset using the best program
+
+    • 19th column : Accuracy with Training set using the best program
+    • 20th column : Accuracy with Test set using the best program
+    • 21st column : Accuracy with All dataset using the best program
+
+    • 22th column : AUC with Training set using the best program
+    • 23th column : AUC with Test set using the best program
+    • 24th column : AUC with All dataset using the best program
+ 
+
+If the 1st colunmn starts with "Final Classification":
+
+    • 1st column : number of generation
+    • 2nd column : RMSE with Training set (fitness) using the best program
+    • 3rd column : RMSE with Test set (fitness) using the best program
+
+    • 4st column : WAF with Training set using the best program
+    • 5nd column : WAF with Test set using the best program
+    • 6rd column : WAF with All dataset using the best program
+
+    • 7th column : Fmeasure non interact with Training set using the best program
+    • 8th column : Fmeasure non interact with Test set using the best program
+    • 9th column : Fmeasure non interact with All dataset using the best program
+
+    • 10th column : Fmeasure interact with Training set using the best program     
+    • 11th column : Fmeasure non interact with Test set using the best program
+    • 12th column : Fmeasure non interact with All dataset using the best program
+
+    • 13th column : Precision with Training set using the best program
+    • 14th column : Precision with Test se using the best program
+    • 15th column : Precision with All dataset using the best program
+      
+    • 16th column : Recall with Training set using the best program
+    • 17th column : Recall with Test set using the best program
+    • 18th column : Recall with All dataset using the best program
+
+    • 19th column : Accuracy with Training set using the best program
+    • 20th column : Accuracy with Test set using the best program
+    • 21st column : Accuracy with All dataset using the best program
+
+    • 22th column : AUC with Training set using the best program
+    • 23th column : AUC with Test set using the best program
+    • 24th column : AUC with All dataset using the best program
+
+    • 25th column : best program
+    • 26tt column : parameters
