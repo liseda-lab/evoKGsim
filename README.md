@@ -1,7 +1,5 @@
 # evoKGsim
 
-**SS**: Taxonomic Semantic Similarity; **ES**: Embedding Semantic Similarity; **SSM**: Semantic Similarity Measure; **GP**: Genetic Programming; **GO**: Gene Ontology; **PPI**: Protein-Protein Interaction.
-
 This repository provides a implementationdescribed in the paper:
 ```
 Evolving knowledge graph similarity for supervised learning in complex biomedical domains
@@ -9,6 +7,7 @@ Rita T. Sousa, Sara Silva, and Catia Pesquita
 BMC bioinformatics 2020 21(1):1-19. doi: 10.1186/s12859-019-3296-1
 ```
 
+**SS**: Taxonomic Semantic Similarity; **ES**: Embedding Semantic Similarity; **SSM**: Semantic Similarity Measure; **GP**: Genetic Programming; **GO**: Gene Ontology; **PPI**: Protein-Protein Interaction.
 
 ## Pre-requesites
 * install python 3.6.8;
