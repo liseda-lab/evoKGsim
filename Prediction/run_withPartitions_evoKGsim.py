@@ -143,7 +143,6 @@ def run_cross_validation(path_file_SS, path_dataset_file, dataset_name, path_res
     """
 
     list_ents, list_ss_gp, list_ss_baselines, list_labels = read_SS_dataset_file(path_file_SS, path_dataset_file)
-    Run = 1
 
     if run_baselines:
         ensure_dir(path_results + '/' + SSM + "/ManualSelection/")
@@ -158,9 +157,9 @@ def run_cross_validation(path_file_SS, path_dataset_file, dataset_name, path_res
 
     n_pairs = len(list_labels)
 
-    for index_partition in range(1, n_partition + 1):
+    for Run in range(1, n_partition + 1):
 
-        file_partition = path_partition + str(index_partition) + '.txt'
+        file_partition = path_partition + str(Run) + '.txt'
         test_index = process_indexes_partition(file_partition)
         train_index = list(set(range(0, n_pairs)) - set(test_index))
         
@@ -202,7 +201,6 @@ def run_cross_validation(path_file_SS, path_dataset_file, dataset_name, path_res
             print('Execution Time: ' + str(end_manualselection - start_manualselection))
             #############  END BASELINES
 
-
             for i in range(len(aspects_baselines)):
                 dict_baselines[aspects_baselines[i]].append(waf_baselines[i])
   
@@ -221,7 +219,6 @@ def run_cross_validation(path_file_SS, path_dataset_file, dataset_name, path_res
             print('Execution Time: ' + str(time_execution_gp))
             #############  END GENETIC PROGRAMMING
     
-        Run = Run + 1
 
     print('\n')
     print('###########################')
