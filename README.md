@@ -1,6 +1,6 @@
 # evoKGsim
 
-This repository provides a implementationdescribed in the paper:
+This repository provides a implementation described in the paper:
 ```
 Evolving knowledge graph similarity for supervised learning in complex biomedical domains
 Rita T. Sousa, Sara Silva, and Catia Pesquita
@@ -8,6 +8,17 @@ BMC bioinformatics 2020 21(1):1-19. doi: 10.1186/s12859-019-3296-1
 ```
 
 **SS**: Taxonomic Semantic Similarity; **ES**: Embedding Semantic Similarity; **SSM**: Semantic Similarity Measure; **GP**: Genetic Programming; **GO**: Gene Ontology; **PPI**: Protein-Protein Interaction.
+
+## Abstract
+
+### Background
+In recent years, biomedical ontologies have become important for describing existing biological knowledge in the form of knowledge graphs. Data mining approaches that work with knowledge graphs have been proposed, but they are based on vector representations that do not capture the full underlying semantics. An alternative is to use machine learning approaches that explore semantic similarity. However, since ontologies can model multiple perspectives, semantic similarity computations for a given learning task need to be fine-tuned to account for this. Obtaining the best combination of semantic similarity aspects for each learning task is not trivial and typically depends on expert knowledge.
+
+### Results
+We have developed a novel approach, evoKGsim, that applies Genetic Programming over a set of semantic similarity features, each based on a semantic aspect of the data, to obtain the best combination for a given supervised learning task. The approach was evaluated on several benchmark datasets for protein-protein interaction prediction using the Gene Ontology as the knowledge graph to support semantic similarity, and it outperformed competing strategies, including manually selected combinations of semantic aspects emulating expert knowledge. evoKGsim was also able to learn species-agnostic models with different combinations of species for training and testing, effectively addressing the limitations of predicting protein-protein interactions for species with fewer known interactions.
+
+### Conclusions
+evoKGsim can overcome one of the limitations in knowledge graph-based semantic similarity applications: the need to expertly select which aspects should be taken into account for a given application. Applying this methodology to protein-protein interaction prediction proved successful, paving the way to broader applications.
 
 ## Pre-requesites
 * install python 3.6.8;
