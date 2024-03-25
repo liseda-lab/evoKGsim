@@ -1,6 +1,6 @@
 # evoKGsim
 
-This repository provides an implementation described in the paper: https://link.springer.com/article/10.1186/s12859-019-3296-1 and https://link.springer.com/chapter/10.1007/978-3-030-80418-3_26. 
+This repository provides an implementation described in the papers: https://link.springer.com/article/10.1186/s12859-019-3296-1 and https://link.springer.com/chapter/10.1007/978-3-030-80418-3_26. 
 
 ## Acronyms
 
