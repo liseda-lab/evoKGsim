@@ -1,11 +1,8 @@
 # evoKGsim
 
-This repository provides a implementation described in the paper:
-```
-Evolving knowledge graph similarity for supervised learning in complex biomedical domains
-Rita T. Sousa, Sara Silva, and Catia Pesquita
-BMC bioinformatics 2020 21(1):1-19. doi: 10.1186/s12859-019-3296-1
-```
+This repository provides an implementation described in the paper: https://link.springer.com/article/10.1186/s12859-019-3296-1 and https://link.springer.com/chapter/10.1007/978-3-030-80418-3_26. 
+
+## Acronyms
 
 **SS**: Taxonomic Semantic Similarity; **ES**: Embedding Semantic Similarity; **SSM**: Semantic Similarity Measure; **GP**: Genetic Programming; **GO**: Gene Ontology; **PPI**: Protein-Protein Interaction.
 
@@ -25,8 +22,6 @@ evoKGsim can overcome one of the limitations in knowledge graph-based semantic s
 * install java JDK 11.0.4;
 * install python libraries by running the following command:  ```pip install -r req.txt```.
 
-
-
 ## 1. Benchmark Datasets
 For the program to work, provide a text file with the protein pairs and respective labels (interact or non-interact). 
 This tab-delimited text file have 3 columns: 
@@ -35,8 +30,6 @@ This tab-delimited text file have 3 columns:
 * 3rd column - Label (the options are 1 for interacting pairs and 0 for non-interacting pairs). 
 
 In this work, we used 9 Benchmark datasets (STRING-SC, STRING-HS, STRING-EC, STRING-DM, DIP-HS, BIND-SC, DIP/MIPS-SC, GRID/HPRD-bal-HS, and GRID/HPRD-unbal-HS) of different species for evaluation. The data is in [Data/PPIdatasets](https://github.com/ritatsousa/evoKGsim/tree/master/Data/PPIdatasets) folder.
-
-
 
 ## 2. Taxonomic Semantic Similarity Computation
 
@@ -64,8 +57,6 @@ java -cp ".:./SS_Calculation/jar_files/*" SS_Calculation/Run_SS_calculation
 
 This command will create, for each dataset, **SS files** (one for each SSM) with the SS between each pair of proteins for each semantic aspect (biological process, cellular component and molecular function) using six different SSMs (ResnikMax_ICSeco, ResnikMax_ICResnik, ResnikBMA_ICSeco, ResnikBMA_ICResnik, simGIC_ICSeco, simGIC_ICResnik). The description of this text file is in [SS_Calculation/SS_files/SS_file_ format.txt](https://github.com/ritatsousa/evoKGsim/blob/master/SS_Calculation/SS_files/SS_file_%20format.txt) file. 
 The new SS files are placed in [SS_Calculation/SS_files/datasetname](https://github.com/ritatsousa/evoKGsim/tree/master/SS_Calculation/SS_files) folder. 
-
-
 
 ## 3. Embedding Semantic Similarity Computation
 
@@ -146,4 +137,22 @@ The parameters we have set are listed in the next Table. All others were used wi
 For running the baselines (static combinations of semantic aspects), run the command:
 ```
 python3 Prediction/run_withPartitions_evoKGsim_SS.py False True
+```
+
+## How to Cite
+
+```
+@article {PMID:31900127,
+	Title = {Evolving knowledge graph similarity for supervised learning in complex biomedical domains},
+	Author = {Sousa, Rita T and Silva, Sara and Pesquita, Catia},
+	DOI = {10.1186/s12859-019-3296-1},
+	Number = {1},
+	Volume = {21},
+	Month = {January},
+	Year = {2020},
+	Journal = {BMC bioinformatics},
+	ISSN = {1471-2105},
+	Pages = {6},
+	URL = {https://europepmc.org/articles/PMC6942314},
+}
 ```
